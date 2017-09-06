@@ -2,15 +2,15 @@ exports = typeof window === 'undefined' ? global : window;
 
 exports.arraysAnswers = {
   indexOf: function(arr, item) {
-
+    return arr.findIndex(val => item === val)
   },
 
   sum: function(arr) {
-
+    return arr.reduce((acc, curr)  => acc + curr)
   },
 
   remove: function(arr, item) {
-
+    return arr.filter(val => val !== item)
   },
 
   removeWithoutCopy: function(arr, item) {
